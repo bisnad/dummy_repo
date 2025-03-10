@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
 
       - name: Push to Gitlab
-        uses: ./.github/workflows/push-to-zhdk-gitlab@master
+        uses: bisnad/push-to-zhdk-gitlab@master
         with:
           gitlab_repository:-url: 'https://gitlab.zhdk.ch/dbisig/dummy_repo_mirror'
           target-username: 'dbisig'
