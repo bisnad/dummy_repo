@@ -1,0 +1,22 @@
+name: Push to ZHdK Gitlab
+
+on:
+  - push
+  - delete
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    name: ZHdK Gitlab Mirror Action
+    steps:
+      - name: Checkout on Github
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Push to Gitlab
+        uses: bisnad/dummy_repo_zhdk_gitlab_mirror_action@v1
+        with:
+          gitlab_repository:-url: 'https://gitlab.zhdk.ch/dbisig/dummy_repo_mirror'
+          target-username: 'dbisig'
+          gitlab_token: ${{ secrets.TARGET_TOKEN }}
