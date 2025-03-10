@@ -18,5 +18,4 @@ jobs:
         uses: saderi/push-to-gitlab@v1
         with:
           gitlab_repository:-url: 'https://gitlab.zhdk.ch/dbisig/dummy_repo_mirror'
-          target-username: 'dbisig'
           gitlab_token: ${{ secrets.TARGET_TOKEN }}
