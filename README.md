@@ -1,3 +1,3 @@
 # dummy_repo
 
-small change
+small change 2
