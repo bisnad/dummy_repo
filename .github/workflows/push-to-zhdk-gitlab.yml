@@ -17,5 +17,5 @@ jobs:
       - name: Push to Gitlab
         uses: bisnad/push-to-gitlab@main
         with:
-          gitlab_repository: 'https://gitlab.zhdk.ch/dbisig/dummy_repo_mirror'
+          gitlab_repository: 'gitlab.zhdk.ch/dbisig/dummy_repo_mirror'
           gitlab_token: ${{ secrets.ZHDK_GITLAB_ACCESS_TOKEN }}
